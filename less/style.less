@@ -27,7 +27,10 @@ body {
   position: relative;
   background: @site-bg;
   .perspective(400px);
+  
 }
+
+
 
 h1, h2 {
 	margin:0;
@@ -57,7 +60,7 @@ nav {
 	  	position: fixed;
 		padding: 20px;
 		.bodyfont;
-
+		.transition(~"color 0.3s @{ease}");
 	
 
 		&.tr{
@@ -78,13 +81,16 @@ nav {
 
 
 
-article,footer {
+article {
 	background: @article-bg;
-	height: 20%;
+	height: 100%;
 	width: 100%;
 	text-align: left;
 	display: table;
 	border-bottom:1px dotted @text-color;
+	&:last-child {
+		border-bottom: none;
+	}
 
 	// .transform3d(translateZ(0px));
 	.inner {
@@ -93,9 +99,14 @@ article,footer {
 		text-align: center;
 		width: 75%;
 		padding: 10%;
+		.transition(~"background 0.3s @{ease}");
 	}
 
-	
+	&.light.active {
+		.inner {
+			background: #CCC;
+		}
+	}
 
 	h1,h2 {
 		.headlinefont;
@@ -108,7 +119,7 @@ article,footer {
 		// padding: 30px 15% 0 15%;
 	}
 
-	&.darkbg {
+	&.dark {
 		h1,h2,p,a {
 			color:white;	
 		}
@@ -119,30 +130,9 @@ article,footer {
 		border-bottom: none;
 	}
 
-}
-
-footer {
-	background: @site-bg;
-	height: 100%;
-}
-
-.caption{
-	font-family:'ITCFranklinGothicW01-Bk 812647';
-	font-size: 14px;
-	line-height: 14px;
-	padding: 30px 15% 0 15%;
-	text-rendering: optimizeLegibility;
-	color: #999999;
-	text-transform: uppercase;	
-}
-.caption a{
-	color: #999999;
-	text-decoration: none;
-	
-}
-
-
-footer {
+	&#contact {
+		background: @site-bg;
+		height: 100%;
+	}
 
 }
-

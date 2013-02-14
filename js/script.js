@@ -40,7 +40,15 @@ BP.init = function(){
 
 
   // scroll effect
-  
+  BP.articles = $('article');
+
+  BP.articles.waypoint(function(direction){
+
+    BP.active = $(this);
+    BP.articles.removeClass('active')
+    BP.active.addClass('active');
+
+  },{ offset: '50%' });
   
 
 
@@ -54,6 +62,8 @@ BP.layout = function(){
   // var window_height = $W.height();
   // $('.project, .table, .waypoint_node,ul').height(window_height);
   
+  // keep active project in viewport
+
 };
 
 BP.show_next = function(){
