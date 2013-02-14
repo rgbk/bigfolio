@@ -13,10 +13,11 @@
 var $W = $(W),
     BP = {
       settings: {
+        elMinHeight:'100%',
         headlines: {
           compressor: 0.7,
-          minFontSize:'72px',
-          maxFontSize:'280px'
+          minFontSize:'40px',
+          maxFontSize:'180px'
         }
         
       }
@@ -31,7 +32,7 @@ BP.init = function(){
   
 
   // responsive headline sizing
-  $(".title").fitText(BP.settings.headlines.compressor, BP.settings.headlines);
+  $("h1,h2").fitText(BP.settings.headlines.compressor, BP.settings.headlines);
 
   // Bind Key control using keymaster.js
   W.key('down',BP.show_next);
@@ -39,7 +40,7 @@ BP.init = function(){
 
 
   // scroll effect
-  $('ul').addClass('cards');
+  
   
 
 
@@ -50,11 +51,9 @@ BP.init = function(){
 
 BP.layout = function(){
 
-  var window_height = $W.height();
-  $('.project, .table, .waypoint_node,ul').height(window_height);
+  // var window_height = $W.height();
+  // $('.project, .table, .waypoint_node,ul').height(window_height);
   
-  $('ul').height(window.innerHeight+'px');
-  W.stroll.bind( 'ul' );
 };
 
 BP.show_next = function(){

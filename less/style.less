@@ -1,0 +1,148 @@
+
+/******************************************************************
+BigFolio Style Template
+******************************************************************/
+
+
+
+
+// Import
+@import "_defaults";
+@import "_mixins";
+@import "_variables";
+
+
+
+body, html{
+	width: 100%;
+	height: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family:@font-body;
+  font-size:62.5%;
+  line-height:1.4em;
+  position: relative;
+  background: @site-bg;
+  .perspective(400px);
+}
+
+h1, h2 {
+	margin:0;
+}
+
+a {
+	color:@link-color;
+	text-decoration: none;
+
+	&:hover {
+		color:@link-color-hover;
+	}
+
+	&:visited {
+		color:@link-color;
+	}
+
+	&:active {
+		color:@link-color;
+	}
+}
+
+nav {
+
+	a {
+		z-index: 100;
+	  	position: fixed;
+		padding: 20px;
+		.bodyfont;
+
+	
+
+		&.tr{
+			right: 0;
+		}
+
+		&.br{
+			right:0;
+			bottom: 0;
+		}
+
+		&.bl{
+			bottom: 0;
+		}
+	}
+
+}
+
+
+
+article,footer {
+	background: @article-bg;
+	height: 100%;
+	width: 100%;
+	text-align: left;
+	display: table;
+	border-bottom:1px dotted @text-color;
+
+	// .transform3d(translateZ(0px));
+	.inner {
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
+		width: 75%;
+		padding: 10%;
+	}
+
+	
+
+	h1,h2 {
+		.headlinefont;
+		// width:75%;
+		margin: 0 auto;
+	}
+
+	p {
+		.bodyfont;
+		// padding: 30px 15% 0 15%;
+	}
+
+	&.darkbg {
+		h1,h2,p,a {
+			color:white;	
+		}
+	}
+
+	&#introduction  {
+		.cover-background('../img/tv_noise.gif');
+		border-bottom: none;
+	}
+
+}
+
+footer {
+	background: @site-bg;
+	height: 100%;
+}
+
+.caption{
+	font-family:'ITCFranklinGothicW01-Bk 812647';
+	font-size: 14px;
+	line-height: 14px;
+	padding: 30px 15% 0 15%;
+	text-rendering: optimizeLegibility;
+	color: #999999;
+	text-transform: uppercase;	
+}
+.caption a{
+	color: #999999;
+	text-decoration: none;
+	
+}
+
+
+footer {
+
+}
+
