@@ -52,7 +52,7 @@
             window.FOLIO_SETTINGS = {
                 sectionHeight:'100%',
                 sethash:true,
-
+                googleAnalyticsInit:[['_setAccount','UA-XXXXX-X'],['_trackPageview']],
                 headlines: {
                   compressor: 0.7,
                   minFontSize:'40px',
@@ -71,7 +71,7 @@
             <a href="http://tumblr.com" class="bl">Blog</a>
         </nav>
 
-        <article id="introduction" class="image dark" style="background-image:url('../img/tv_noise.gif');">
+        <article id="introduction" class="image dark" style="background-image:url('img/tv_noise.gif');">
             <div class="inner">
                 <h1>Selected Work</h1>
             </div>
@@ -91,7 +91,7 @@
             </div>
         </article>
 
-        <article id="work3" class="light">
+        <article id="work3" class="light" style="background-image:url('img/tv_noise.gif');">
             <div class="inner">
                 <h2><a href="http://work.com"> Work 3 Title </a></h2>
                 <p>Work Description for <a href="client.com" class="client">Client Name</a></p>
@@ -104,7 +104,7 @@
                 <section>
                     Service Description
                 </section>
-                <section id="hcard-aplusplus" class="vcard">
+                <section id="hcard" class="vcard">
                      <span class="fn org">Uli Schöberl</span>
                      <a class="email" href="mailto:uli@aplusplus.org">uli@aplusplus.org</a>
                      <a class="tel" href="call:+491623814313">+49 162 3814313</a>
@@ -113,8 +113,6 @@
                       <span class="postal-code">10119</span>
                       <span class="country-name">Germany</span>
                      </div>
-                    
-                     <a class="url" href="aim:goim?screenname=uli@aplusplus.org">AIM</a>
                 </section>
 
             </div>
@@ -126,7 +124,7 @@
         <script type="text/javascript" src="js/plugins.min.js"></script>
         <script type="text/javascript" src="js/script.js"></script>
         <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            var _gaq= window.FOLIO_SETTINGS.googleAnalyticsInit;
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
             g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
             s.parentNode.insertBefore(g,s)}(document,'script'));
