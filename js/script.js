@@ -23,6 +23,10 @@ var $W = $(W),
       }
     };
 
+if(typeof W.FOLIO_SETTINGS === 'object') {
+  BP.settings = $.extend(BP.settings,W.FOLIO_SETTINGS);
+}
+
 
 BP.init = function(){
   W.log('Start');
@@ -42,10 +46,10 @@ BP.init = function(){
   // scroll effect
   BP.articles = $('article');
 
-  BP.articles.waypoint(function(direction){
+  BP.articles.waypoint(function(){
 
     BP.active = $(this);
-    BP.articles.removeClass('active')
+    BP.articles.removeClass('active');
     BP.active.addClass('active');
 
   },{ offset: '50%' });

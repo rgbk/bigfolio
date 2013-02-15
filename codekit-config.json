@@ -13,6 +13,39 @@
       "outputAbbreviatedPath" : "\/js\/plugins.min.js",
       "fileType" : 64
     },
+    "\/img\/touchicon.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/touchicon.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/touchicon.png",
+      "initialSize" : 1273,
+      "fileType" : 8192
+    },
+    "\/img\/favicon64.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/favicon64.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/favicon64.png",
+      "initialSize" : 773,
+      "fileType" : 8192
+    },
+    "\/img\/favicon.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/favicon.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/favicon.png",
+      "initialSize" : 403,
+      "fileType" : 8192
+    },
     "\/js\/libs\/bigvideo.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -57,16 +90,16 @@
       "outputAbbreviatedPath" : "\/js\/script.min-ck.js",
       "fileType" : 64
     },
-    "\/js\/libs\/modernizr-2.6.2.min.js" : {
+    "\/img\/preview.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/libs\/modernizr-2.6.2.min.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/libs\/modernizr-2.6.2.min.min.js",
-      "fileType" : 64
+      "inputAbbreviatedPath" : "\/img\/preview.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/preview.png",
+      "initialSize" : 2146,
+      "fileType" : 8192
     },
     "\/less\/_variables.less" : {
       "ignoreWasSetByUser" : 0,
@@ -80,6 +113,17 @@
       "strictImports" : 0,
       "fileType" : 1,
       "debugStyle" : 0
+    },
+    "\/js\/libs\/modernizr-2.6.2.min.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/libs\/modernizr-2.6.2.min.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/libs\/modernizr-2.6.2.min.min.js",
+      "fileType" : 64
     },
     "\/css\/style.css" : {
       "ignoreWasSetByUser" : 0,
@@ -189,6 +233,15 @@
       "outputAbbreviatedPath" : "\/js\/libs\/jquery-ui-1.8.22.custom.min.min.js",
       "fileType" : 64
     },
+    "\/index.template.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/index.template.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
     "\/img\/mk.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -200,14 +253,16 @@
       "initialSize" : 122293,
       "fileType" : 4096
     },
-    "\/index.html" : {
+    "\/img\/icons.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/index.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
+      "inputAbbreviatedPath" : "\/img\/icons.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/icons.png",
+      "initialSize" : 1591,
+      "fileType" : 8192
     },
     "\/backup.html" : {
       "ignoreWasSetByUser" : 0,
@@ -252,6 +307,17 @@
       "strictImports" : 0,
       "fileType" : 1,
       "debugStyle" : 0
+    },
+    "\/img\/tileicon.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/tileicon.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/tileicon.png",
+      "initialSize" : 1591,
+      "fileType" : 8192
     },
     "\/css\/stroll.css" : {
       "ignoreWasSetByUser" : 0,
