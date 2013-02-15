@@ -23,6 +23,10 @@ var $W = $(W),
       }
     };
 
+if(typeof W.FOLIO_SETTINGS === 'object') {
+  BP.settings = $.extend(BP.settings,W.FOLIO_SETTINGS);  
+}
+
 
 BP.init = function(){
   W.log('Start');
